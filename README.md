@@ -40,16 +40,11 @@ A modern, responsive full-stack app featuring email/OTP and Google OAuth authent
 ### 1. Clone the repo
 🚀 Quickstart
 1. Clone the Repository
-bash
-Copy
-Edit
 git clone https://github.com/yourusername/Note-Taking-Application.git
 cd Note-Taking-Application
+
 2. Configure Environment Variables
 📂 backend/.env
-env
-Copy
-Edit
 PORT=5000
 DATABASE_URL=<your_mongo_uri>
 JWT_SECRET=<your_jwt_secret>
@@ -58,22 +53,16 @@ EMAIL_SERVICE=gmail
 EMAIL_USER=<gmail_user>
 EMAIL_PASS=<gmail_app_password>
 FRONTEND_URL=http://localhost:3000
+
 📂 frontend/.env
-env
-Copy
-Edit
 VITE_API_URL=http://localhost:5000/api
 VITE_GOOGLE_CLIENT_ID=<google_oauth_client_id>
+
 3. Install Dependencies
-bash
-Copy
-Edit
 cd backend && npm install
 cd ../frontend && npm install
+
 4. Start Development Servers
-bash
-Copy
-Edit
 # Start Backend
 cd backend
 npm run dev   # Runs on http://localhost:5000
@@ -81,6 +70,8 @@ npm run dev   # Runs on http://localhost:5000
 # Start Frontend
 cd ../frontend
 npm run dev   # Runs on http://localhost:3000
+
+
 📦 Production Build & Deployment
 🔧 Frontend
 bash

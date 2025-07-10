@@ -40,38 +40,38 @@ A modern, responsive full-stack app featuring email/OTP and Google OAuth authent
 ### 1. Clone the repo
 🚀 Quickstart
 1. Clone the Repository
--git clone https://github.com/yourusername/Note-Taking-Application.git
--cd Note-Taking-Application
+git clone https://github.com/yourusername/Note-Taking-Application.git
+cd Note-Taking-Application
 
 2. Configure Environment Variables
--📂 backend/.env
--PORT=5000
--DATABASE_URL=<your_mongo_uri>
--JWT_SECRET=<your_jwt_secret>
--GOOGLE_CLIENT_ID=<google_oauth_client_id>
--EMAIL_SERVICE=gmail
--EMAIL_USER=<gmail_user>
--EMAIL_PASS=<gmail_app_password>
--FRONTEND_URL=http://localhost:3000
+📂 backend/.env
+PORT=5000
+DATABASE_URL=<your_mongo_uri>
+JWT_SECRET=<your_jwt_secret>
+GOOGLE_CLIENT_ID=<google_oauth_client_id>
+EMAIL_SERVICE=gmail
+EMAIL_USER=<gmail_user>
+EMAIL_PASS=<gmail_app_password>
+FRONTEND_URL=http://localhost:3000
 
--📂 frontend/.env
--VITE_API_URL=http://localhost:5000/api
--VITE_GOOGLE_CLIENT_ID=<google_oauth_client_id>
+📂 frontend/.env
+VITE_API_URL=http://localhost:5000/api
+VITE_GOOGLE_CLIENT_ID=<google_oauth_client_id>
 
 3. Install Dependencies
--cd backend && npm install
--cd ../frontend && npm install
+cd backend && npm install
+cd ../frontend && npm install
 
 4. Start Development Servers
--# Start Backend
--cd backend
--npm run dev   # Runs on http://localhost:5000
+# Start Backend
+cd backend
+npm run dev   # Runs on http://localhost:5000
 
--# Start Frontend
--cd ../frontend
--npm run dev   # Runs on http://localhost:3000
+# Start Frontend
+cd ../frontend
+npm run dev   # Runs on http://localhost:3000
 
----
+
 
 # 🧩 API Endpoints
 Auth
@@ -93,34 +93,7 @@ DELETE /api/notes/:id
 Users
 GET /api/user/profile
 
----
-#📁 Project Structure
-bash
-Copy
-Edit
-├── frontend/
-│   ├── src/
-│   │   ├── components/  # UI & forms
-│   │   ├── contexts/    # Auth state management
-│   │   ├── services/    # API calls
-│   │   └── types/
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   ├── middleware/
-│   │   └── utils/
----
-#🧠 Deployment Tips
-Frontend: Deploy Vite build to Vercel/Netlify
 
-Backend: Use Render or Heroku – ensure TypeScript builds and .env variables are configured
-
-CORS setup: Backend reads FRONTEND_URL for allowed origins
-
-Google OAuth: Register localhost:3000 and the production URL in Google's OAuth settings
----
 # Next Steps & Contributions
 User profile editing
 
@@ -137,10 +110,10 @@ CI/CD setup (GitHub Actions)
 Dockerize apps for container deployment
 
 Contributions welcome — fork the repo, add features or fixes, and create PRs!
----
+
 # License
 This project is licensed under the MIT License. See LICENSE for details.
----
+
 # Contact
 Have questions or ideas? Reach me at:
 

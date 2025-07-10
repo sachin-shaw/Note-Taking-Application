@@ -40,55 +40,38 @@ A modern, responsive full-stack app featuring email/OTP and Google OAuth authent
 ### 1. Clone the repo
 🚀 Quickstart
 1. Clone the Repository
-git clone https://github.com/yourusername/Note-Taking-Application.git
-cd Note-Taking-Application
+-git clone https://github.com/yourusername/Note-Taking-Application.git
+-cd Note-Taking-Application
 
 2. Configure Environment Variables
-📂 backend/.env
-PORT=5000
-DATABASE_URL=<your_mongo_uri>
-JWT_SECRET=<your_jwt_secret>
-GOOGLE_CLIENT_ID=<google_oauth_client_id>
-EMAIL_SERVICE=gmail
-EMAIL_USER=<gmail_user>
-EMAIL_PASS=<gmail_app_password>
-FRONTEND_URL=http://localhost:3000
+-📂 backend/.env
+-PORT=5000
+-DATABASE_URL=<your_mongo_uri>
+-JWT_SECRET=<your_jwt_secret>
+-GOOGLE_CLIENT_ID=<google_oauth_client_id>
+-EMAIL_SERVICE=gmail
+-EMAIL_USER=<gmail_user>
+-EMAIL_PASS=<gmail_app_password>
+-FRONTEND_URL=http://localhost:3000
 
-📂 frontend/.env
-VITE_API_URL=http://localhost:5000/api
-VITE_GOOGLE_CLIENT_ID=<google_oauth_client_id>
+-📂 frontend/.env
+-VITE_API_URL=http://localhost:5000/api
+-VITE_GOOGLE_CLIENT_ID=<google_oauth_client_id>
 
 3. Install Dependencies
-cd backend && npm install
-cd ../frontend && npm install
+-cd backend && npm install
+-cd ../frontend && npm install
 
 4. Start Development Servers
-# Start Backend
-cd backend
-npm run dev   # Runs on http://localhost:5000
+-# Start Backend
+-cd backend
+-npm run dev   # Runs on http://localhost:5000
 
-# Start Frontend
-cd ../frontend
-npm run dev   # Runs on http://localhost:3000
+-# Start Frontend
+-cd ../frontend
+-npm run dev   # Runs on http://localhost:3000
 
-
-📦 Production Build & Deployment
-🔧 Frontend
-bash
-Copy
-Edit
-cd frontend
-npm run build
-⚡ Deploy the generated dist/ folder (from Vite) to a static host like Vercel, Netlify, or GitHub Pages.
-
-🔧 Backend
-bash
-Copy
-Edit
-cd backend
-npm run build
-npm start
-🚀 Deploy the backend folder to a Node.js host like Render, Heroku, or Railway.
+---
 
 # 🧩 API Endpoints
 Auth
